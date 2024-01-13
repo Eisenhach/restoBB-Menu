@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!---- Tipografia  ---->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----  Frameworks & Icons  ---->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>Nuestro Menu</title>
+  </head>
+  <body>
+    <nav class="mobile-menu bg-[#1a120b] p-5">
+      <div class="flex justify-between items-center">
+        <!-- LOGO -->
+        <img
+          src="./assets/logo.jpg"
+          alt=""
+          class="w-10 h-10 object-contain nav-img"
+        />
+
+        <h1 class="nav-title font-semibold uppercase">
+          Servicio Gastronomico BB
+        </h1>
+
+        <!-- Menu hamburgesa -->
+        <button id="mobile-menu-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="#ede8e8 "
+              stroke-linecap="round"
+              stroke-width="1.5"
+              d="M20 7H4m16 5H4m16 5H4"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden mt-4">
+        <ul class="text-center">
+          <!-- Elementos del menú van aquí -->
+          <li class="py-2">
+            <a href="#" class="nav-title block uppercase font-semibold">Menu</a>
+          </li>
+          <li class="py-2">
+            <a href="#" class="nav-title block uppercase font-semibold"
+              >Promos</a
+            >
+          </li>
+          <li class="py-2">
+            <a href="#" class="nav-title block uppercase font-semibold"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="mx-auto container p-4">
+      <section class="mt-8">
+        <h2 class="text-3xl font-bold mb-4 text-center uppercase">Entradas</h2>
+
+        <hr />
+
+        <!-- Lista -ENTRADAS -->
+
+        <ul class="mt-5">
+          <li class="flex justify-between items-center mb-2">
+            <span>Rabas</span>
+            <span>$6.500</span>
+          </li>
+
+          <li class="flex justify-between items-center mb-2">
+            <span>Papas con chedar y verdeo </span>
+            <img src="./assets/sin-tacc.jpg" height="25" width="25" alt="" />
+
+            <span>$4.000</span>
+          </li>
+
+          <li class="flex justify-between items-center mb-2">
+            <span>Papas</span>
+            <span>$2.700</span>
+          </li>
+
+          <li class="flex justify-between items-center mb-2">
+            <span>Gambas al ajillo</span>
+            <img src="./assets/sin-tacc.jpg" height="25" width="25" alt="" />
+            <span>$7.000</span>
+          </li>
+
+          <li class="flex justify-between items-center mb-2">
+            <span>Bastones de muzarella</span>
+            <span>$4.200</span>
+          </li>
+        </ul>
+
+        <ul class="mt-8">
+          <li class="flex justify-between items-center mb-2">
+            <span>Revuelto gramajo</span>
+            <img src="./assets/sin-tacc.jpg" height="25" width="25" alt="" />
+
+            <span>$4.200</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Tortilla de papa</span>
+            <img src="./assets/sin-tacc.jpg" height="25" width="25" alt="" />
+            <span>$4.000</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Ensalada cesar</span>
+            <span>$4.600</span>
+          </li>
+        </ul>
+
+        <!-- Lista - PRINCIPALES -->
+
+        <div class="flex items-center mb-4 mt-10">
+          <h2 class="text-3xl font-bold uppercase ml-20">Principales</h2>
+          <img
+            src="./assets/sin-tacc.jpg"
+            class="ml-3"
+            height="40"
+            width="40"
+            alt=""
+          />
+        </div>
+
+        <hr />
+        <ul class="mt-5">
+          <li class="flex justify-between items-center mb-2">
+            <span>Lomo a la mostaza o roquefort</span>
+            <span>$8.000</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Bife de chorizo c/ guarnición</span>
+            <span>$8.000</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Risotto de pollo y champiñón</span>
+            <span>$4.500</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Wok (ternera, pollo o vegetales)</span>
+            <span>$5.000</span>
+          </li>
+        </ul>
+
+        <!-- Lista - GUARNICIONES -->
+
+        <div class="flex items-center mb-4 mt-10">
+          <h2 class="text-3xl font-bold uppercase ml-14">Guarniciones</h2>
+          <img
+            src="./assets/sin-tacc.jpg"
+            class="ml-3"
+            height="40"
+            width="40"
+            alt=""
+          />
+        </div>
+
+        <hr />
+        <ul class="mt-5">
+          <li class="flex justify-between items-center mb-2">
+            <span>Papas fritas</span>
+            <span>$2.700</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Puré de papa</span>
+            <span>$2.700</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Puré de calabaza</span>
+            <span>$2.800</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Ensalada mixta</span>
+            <span>$2.100</span>
+          </li>
+        </ul>
+
+        <!-- Lista - MINUTAS -->
+
+        <h2 class="text-3xl font-bold mb-4 mt-10 text-center uppercase">
+          Minutas
+        </h2>
+
+        <hr />
+        <p class="text-center font-bold mt-3">con guarnición</p>
+
+        <ul class="mt-5">
+          <li class="flex justify-between items-center mb-2">
+            <span>Milanesa de ternera</span>
+            <span>$5.900</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Milanesa de ternera napolitana</span>
+            <span>$6.500</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Suprema de pollo</span>
+            <span>$5.900</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Suprema napolitana</span>
+            <span>$6.500</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Pechuga grille</span>
+            <img src="./assets/sin-tacc.jpg" height="25" width="25" alt="" />
+
+            <span>$5.900</span>
+          </li>
+          <!-- AÑADIR PUNTOS EN LOS LI Y REMPLAZAR LOS - -->
+          <ul class="">
+            <li class="flex justify-between mt-8 items-center mb-2">
+              <span>Tartas</span>
+              <span>$3.500</span>
+            </li>
+            <li class="flex justify-between items-center mb-2 ml-2">
+              -Jamón y queso
+            </li>
+            <li class="flex justify-between items-center mb-2 ml-2">
+              -Espinaca y queso
+            </li>
+          </ul>
+        </ul>
+
+        <!-- Lista - HAMBURGUESAS -->
+
+        <h2 class="text-3xl font-bold mb-4 mt-10 text-center uppercase">
+          Hamburguesas
+        </h2>
+        <hr />
+
+        <ul class="mt-5">
+          <li class="flex justify-between items-center mb-2">
+            <span>Sola</span>
+            <span>$3.300</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Completa</span>
+            <span>$4.000</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <span>Santa María</span>
+            <span>$4.600</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <p class="text-sm">(doble medallón de carne, cebolla</p>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <p class="text-sm">caramelizada, panceta y huevo)</p>
+          </li>
+        </ul>
+
+        <!-- Lista -- PASTAS -->
+
+        <h2 class="text-3xl font-bold mb-4 mt-10 text-center uppercase">
+          Pastas
+        </h2>
+        <hr />
+
+        <ul class="mt-5">
+          <li class="flex justify-between items-center mb-2">
+            <span>Fideos cinta</span>
+            <span>$1.700</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Ñoquis</span>
+            <span>$2.000</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <span>Sorrentinos</span>
+            <span>$2.200</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <span>Ravioles</span>
+            <span>$2.200</span>
+          </li>
+        </ul>
+
+        <!-- Lista- SALSAS -->
+
+        <h2 class="text-3xl font-bold mb-4 mt-10 text-center uppercase">
+          Salsas
+        </h2>
+        <hr />
+
+        <ul class="mt-5">
+          <li class="flex justify-between items-center mb-2">
+            <span>Fileto</span>
+            <span>$900</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <span>Mixta</span>
+            <span>$1.200</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <span>Rosa</span>
+            <span>$1.200</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <span>Blanca</span>
+            <span>$1.200</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <span>Bolognesa</span>
+            <span>$1.500</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <span>Estofado</span>
+            <span>$1.700</span>
+          </li>
+          <li class="flex justify-between items-center">
+            <span class="font-bold">Adicional de parmesano</span>
+            <span>$300</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
