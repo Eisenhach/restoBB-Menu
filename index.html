@@ -24,6 +24,10 @@
     />
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="stylesheet" href="src/style/index.css" />
 
@@ -36,16 +40,19 @@
         <img
           src="src/assets/logo.jpg"
           alt=""
-          class="w-10 h-10 object-contain nav-img"
+          class="w-10 h-10 object-contain nav-img animate__animated animate__fadeIn"
         />
 
-        <h1 class="nav-title font-semibold uppercase">
+        <h1
+          class="nav-title font-semibold uppercase animate__animated animate__fadeIn"
+        >
           Servicio Gastronomico BB
         </h1>
 
         <!-- Menu hamburgesa -->
-        <button id="mobile-menu-button">
+        <button id="mobile-menu-button ">
           <svg
+            class="animate__animated animate__fadeIn"
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
@@ -86,63 +93,76 @@
       </div>
     </nav>
 
-    <main class="mx-auto container p-4">
-      <section class="mt-8">
-        <h2 class="text-3xl font-bold mb-4 text-center uppercase">Entradas</h2>
-
-        <hr />
-
-        <!-- Lista -ENTRADAS -->
-
-        <ul class="mt-5">
-          <li class="flex justify-between items-center mb-2">
-            <span>Rabas</span>
-            <span>$6.500</span>
-          </li>
-
-          <li class="flex justify-between items-center mb-2">
-            <span>Papas con chedar y verdeo </span>
-            <img src="src/assets/sin-tacc.jpg" height="25" width="25" alt="" />
-
-            <span>$4.000</span>
-          </li>
-
-          <li class="flex justify-between items-center mb-2">
-            <span>Papas</span>
-            <span>$2.700</span>
-          </li>
-
-          <li class="flex justify-between items-center mb-2">
-            <span>Gambas al ajillo</span>
-            <img src="src/assets/sin-tacc.jpg" height="25" width="25" alt="" />
-            <span>$7.000</span>
-          </li>
-
-          <li class="flex justify-between items-center mb-2">
-            <span>Bastones de muzarella</span>
-            <span>$4.200</span>
-          </li>
-        </ul>
-
-        <ul class="mt-8">
-          <li class="flex justify-between items-center mb-2">
-            <span>Revuelto gramajo</span>
-            <img src="src/assets/sin-tacc.jpg" height="25" width="25" alt="" />
-
-            <span>$4.200</span>
-          </li>
-          <li class="flex justify-between items-center mb-2">
-            <span>Tortilla de papa</span>
-            <img src="src/assets/sin-tacc.jpg" height="25" width="25" alt="" />
-            <span>$4.000</span>
-          </li>
-          <li class="flex justify-between items-center mb-2">
-            <span>Ensalada cesar</span>
-            <span>$4.600</span>
-          </li>
-        </ul>
+    <main class="mx-auto container p-4 mb-24">
+      <section class="mt-24">
+        <div
+          class="text-3xl font-bold mb-4 mt-10 text-center uppercase text-[#3c2a21]"
+        >
+          <a
+            href="src/pages/menu.html"
+            class="block mb-24 animate__animated animate__backInRight"
+          >
+            menu
+          </a>
+          <a
+            href="src/pages/cafeteria.html"
+            class="block mb-24 animate__animated animate__backInLeft"
+            >cafetería</a
+          >
+          <a
+            href="src/pages/promos.html"
+            class="block animate__animated animate__backInRight"
+            >promos</a
+          >
+        </div>
       </section>
     </main>
+
+    <footer class="w-full h-full bg-[#3c2a21]">
+      <div class="block items-center justify-center text-center h-full">
+        <div class="mx-2 text-4xl text-[#ede8e8] pt-5">
+          <i class="fa-solid fa-location-dot pb-2 animate-bounce"></i>
+          <h2 class="text-base">
+            Encontranos en los House de los barrios privados
+          </h2>
+          <p class="text-base">📍 Santa Rita</p>
+          <p class="text-base">📍 Cruz del Sur</p>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div class="mx-4 text-4xl text-[#ede8e8] p-5">
+          <a
+            href="https://www.instagram.com/serviciogastronomicobb"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-instagram animate-bounce"></i>
+            <h2 class="text-lg">@serviciogastronomicobb</h2>
+          </a>
+        </div>
+
+        <!-- WHATSAPP -->
+        <div class="mx-4 text-4xl text-[#ede8e8] p-5">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp animate-bounce"> </i>
+            <p class="text-lg">11 2233 - 4455</p>
+          </a>
+        </div>
+
+        <hr class="border-[#ede8e8]" />
+        <div class="text-[#ede8e8] mt-2">
+          <p>
+            ©
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Desarrollo </a
+            >|
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Diseño</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="src/js/index.js"></script>
 </html>

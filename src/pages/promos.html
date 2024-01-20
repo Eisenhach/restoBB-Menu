@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!---- Tipografia  ---->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----  Frameworks & Icons  ---->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="../style/index.css" />
+    <title>Promos</title>
+  </head>
+  <body>
+    <header>
+      <nav class="mobile-menu bg-[#3c2a21] p-5">
+        <div class="flex justify-between items-center">
+          <!-- LOGO -->
+          <img
+            src="../assets/logo.jpg"
+            alt=""
+            class="w-10 h-10 object-contain nav-img"
+          />
+
+          <h1 class="nav-title font-semibold uppercase">
+            Servicio Gastronomico BB
+          </h1>
+
+          <!-- Menu hamburgesa -->
+          <button id="mobile-menu-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#ede8e8 "
+                stroke-linecap="round"
+                stroke-width="1.5"
+                d="M20 7H4m16 5H4m16 5H4"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden mt-4">
+          <ul class="text-center">
+            <!-- Elementos del menú van aquí -->
+
+            <li class="py-2">
+              <a
+                href="../pages/menu.html"
+                class="nav-title block uppercase font-semibold"
+                >Menu</a
+              >
+            </li>
+            <li class="py-2">
+              <a
+                href="../pages/cafeteria.html"
+                class="nav-title block uppercase font-semibold"
+                >Cafetería</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mx-auto container p-4">
+      <section class="mt-8">
+        <h2
+          class="text-3xl font-bold mb-4 text-center uppercase text-[#3c2a21]"
+        >
+          Promos
+        </h2>
+
+        <!-- Lista - DESAYUNO / MERIENDA -->
+
+        <hr class="border-[#3c2a21] mt-4" />
+
+        <p class="text-center font-bold mt-3 text-[#3c2a21]">
+          Desayuno | Merienda
+        </p>
+
+        <ul class="mt-5 mb-4">
+          <li class="flex justify-between items-center text-lg">
+            <span>PROMO 1</span>
+            <span>$2.000</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <p class="text-sm">1 café c/ leche + 2 medialunas</p>
+          </li>
+
+          <li class="flex justify-between items-center text-lg">
+            <span>PROMO 2 </span>
+            <span>$3.500</span>
+          </li>
+
+          <li class="flex justify-between items-center mb-2">
+            <p class="text-sm">1 exprimido + 1 tostado</p>
+          </li>
+
+          <li class="flex justify-between items-center text-lg mb-2">
+            <span>PROMO 3 </span>
+            <span>$4.000</span>
+          </li>
+
+          <li class="flex justify-between items-center mb-2">
+            <p class="text-sm">1 café c/ leche + 1 porción de torta</p>
+          </li>
+        </ul>
+
+        <!-- Lista - Almuerzo | Cena -->
+
+        <hr class="border-[#3c2a21]" />
+
+        <p class="text-center font-bold mt-3 text-[#3c2a21]">Almuerzo | Cena</p>
+
+        <ul class="mt-5 mb-4">
+          <li class="flex justify-between items-center text-lg">
+            <span>PROMO 1</span>
+            <span>$11.000</span>
+          </li>
+          <li class="flex justify-between items-center mb-2">
+            <p class="text-sm">Mila Napolitana XL (comen hasta 3 personas)</p>
+          </li>
+
+          <li class="flex justify-between items-center text-lg">
+            <span>PROMO 2 </span>
+            <span>$11.000</span>
+          </li>
+
+          <li class="flex justify-between items-center mb-2">
+            <p class="text-sm">1 Pizza Muzza + 6 empanadas clásicas</p>
+          </li>
+
+          <li class="flex justify-between items-center text-lg">
+            <span>PROMO 3 </span>
+            <span>$14.000</span>
+          </li>
+
+          <li class="flex justify-between items-center mb-2">
+            <p class="text-sm">1 Pizza Muzza + 1 Pizza Jamón y Morrón</p>
+          </li>
+
+          <li class="flex justify-between items-center text-lg">
+            <span>PROMO 4 </span>
+            <span>$10.500</span>
+          </li>
+
+          <li class="flex justify-between items-center mb-2">
+            <p class="text-sm">6 empanadas clásicas + 6 empanadas especiales</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="w-full h-full bg-[#3c2a21]">
+      <div class="block items-center justify-center text-center h-full">
+        <div class="mx-2 text-4xl text-[#ede8e8] pt-5">
+          <i class="fa-solid fa-location-dot pb-2"></i>
+          <h2 class="text-base">
+            Encontranos en los House de los barrios privados
+          </h2>
+          <p class="text-base">📍 Santa Rita</p>
+          <p class="text-base">📍 Cruz del Sur</p>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div class="mx-4 text-4xl text-[#ede8e8] p-5">
+          <a
+            href="https://www.instagram.com/serviciogastronomicobb"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <h2 class="text-lg">@serviciogastronomicobb</h2>
+          </a>
+        </div>
+
+        <!-- WHATSAPP -->
+        <div class="mx-4 text-4xl text-[#ede8e8] p-5">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"> </i>
+            <p class="text-lg">11 2233 - 4455</p>
+          </a>
+        </div>
+
+        <hr class="border-[#ede8e8]" />
+        <div class="text-[#ede8e8] mt-2">
+          <p>
+            ©
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Desarrollo </a
+            >|
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Diseño</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/index.js"></script>
+</html>
