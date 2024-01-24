@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre nuestro menú, cafetería, promociones y más en Servicio Gastronómico BB. ¡Síguenos en Instagram para las últimas novedades!"
+    />
+    <meta name="keywords" content="menu restobb" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/logo.jpg"
+      type="image/x-icon"
+    />
 
     <!---- Tipografia  ---->
 
@@ -31,8 +41,24 @@
 
     <link rel="stylesheet" href="src/style/index.css" />
 
-    <title>Nuestro Menu</title>
+    <title>Servicio Gastronómico BB - Nuestro Menú</title>
   </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JFL29RQDMM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-JFL29RQDMM");
+  </script>
+
   <body>
     <div class="h-5px bg-[#1a1a1a]">
       <p class="text-[#ede8e8] text-center font-bold text-base">
@@ -53,7 +79,7 @@
         <!-- LOGO -->
         <img
           src="src/assets/logo.jpg"
-          alt=""
+          alt="logo de servicio gastronómico bb"
           class="w-10 h-10 object-contain nav-img animate__animated animate__fadeIn"
         />
 
